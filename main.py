@@ -11,7 +11,7 @@ class Main(Frame):
         self.lbl = Label(text=self.formula, font=("Times New Roman", 21, "bold"), bg="#000", foreground="#FFF")
         self.lbl.place(x=11, y=50)
 
-        btns = [  # кнопки
+        btns = [ 
             "C", "DEL", "*", "=",
             "1", "2", "3", "/",
             "4", "5", "6", "+",
@@ -56,9 +56,9 @@ class Main(Frame):
 
 if __name__ == '__main__':
     root = Tk()
-    root["bg"] = "#000"  # цвет фона
-    root.geometry("485x550+200+200")  # размер окна
-    root.title("Калькулятор")  # название вкладки
+    root["bg"] = "#000"
+    root.geometry("485x550+200+200") 
+    root.title("Калькулятор")  
     root.resizable(False, False)
     app = Main(root)
     app.pack()
